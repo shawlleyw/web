@@ -11,6 +11,8 @@
 <body>
     <form class="center">
     <img  id="preview" alt='cat' width=500 length=200 hidden="hidden" /><br/>
+    </form>
+    <form class="center">
     <input class='image' type="file" name="file" id="file" accept="image/jpeg,image/jpg,image/png" multiple="multiple" onchange="previewImage(this)"/>	
     <input  type="submit" onclick="sendImage()"  />
     <p  id='waiting'></p><br>

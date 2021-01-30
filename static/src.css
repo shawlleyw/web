@@ -15,11 +15,11 @@ input.image{
 input[type="submit"]{
     width:100px;
     height:30x;
-    margin-left: 24ex;
-}
-input[type='file']{
-    margin-left: 14ex;
+    position: relative;
+    left: 30%;
 }
 form.center{
-    margin-left: 36ex;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 }

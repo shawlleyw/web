@@ -1,5 +1,5 @@
-body {
-    background-image: url(background_cat.jpeg);
+body {  
+    background-color: cadetblue;
     background-attachment: fixed;
 }
 input.image{
@@ -12,14 +12,25 @@ input.image{
     border-radius:10px;
     border-style:outset dashed double;
 }
-input[type="submit"]{
+.button{
     width:100px;
     height:30x;
     position: relative;
     left: 30%;
 }
-form.center{
+.center{
     display: table;
     margin-left: auto;
     margin-right: auto;
+}
+.back{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    height: 900px;
+    background-image: url(background_cat.jpeg);
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
 }

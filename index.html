@@ -9,13 +9,16 @@
 </head>
 
 <body>
-    <form class="center">
-    <img  id="preview" alt='cat' width=500 length=200 hidden="hidden" /><br/>
-    </form>
-    <form class="center">
-    <input class='image' type="file" name="file" id="file" accept="image/jpeg,image/jpg,image/png" multiple="multiple" onchange="previewImage(this)"/>	
-    <input  type="submit" onclick="sendImage()"  />
-    <p  id='waiting'></p><br>
-    <p  id='catinfo'></p>
-    </form>
+    <div class="back">
+        <br/><br/>
+        <div class="center">
+        <input class='image' type="file" name="file" id="file" accept="image/jpeg,image/jpg,image/png" multiple="multiple" onchange="previewImage(this)"/>	
+        <button class="button" onclick="sendImage()">Submit</button>
+        <p id='waiting'></p><br>
+        <p id='catinfo'></p>
+        </div>
+        <form class="center">
+            <img id="preview" alt='cat' width=500 length=200 hidden="hidden" /><br/>
+        </form>
+    <div>
 </body>

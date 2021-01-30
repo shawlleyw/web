@@ -10,7 +10,7 @@ function previewImage(fileDom){
 		var img = document.getElementById("preview");
 		img.src = element.target.result;
 		img.removeAttribute("hidden");
-		document.getElementById('waiting').innerHTML='';
+		
 	}
 	reader.readAsDataURL(file);
 }
@@ -32,6 +32,7 @@ function getInfo(){
 	var receive_xhttp = new XMLHttpRequest();
 	receive_xhttp.onreadystatechange = function(){
 		if(this.readyState == 4 && this.status == 200){
+			document.getElementById('waiting').innerHTML='';
 			writePage($.parseJSON(receive_xhttp.responseText))
 		}
 	}

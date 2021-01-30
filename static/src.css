@@ -1,0 +1,25 @@
+body {
+    background-image: url(background_cat.jpeg);
+    background-attachment: fixed;
+}
+input.image{
+    display:block;
+    width:250px;
+    height:30px;
+    background-color: #aaa;
+    border:1px solid #fee;
+    outline:none;
+    border-radius:10px;
+    border-style:outset dashed double;
+}
+input[type="submit"]{
+    width:100px;
+    height:30x;
+    margin-left: 24ex;
+}
+input[type='file']{
+    margin-left: 14ex;
+}
+form.center{
+    margin-left: 36ex;
+}

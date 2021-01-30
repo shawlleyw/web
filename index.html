@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script type='text/javascript' src='jquery-3.5.1.min.js'></script>
-    <script src='src.js'></script>
+    <script type='text/javascript' src='static/jquery-3.5.1.min.js'></script>
+    <script type='text/javascript' src='static/src.js'></script>
     <title>Cat-Face Recognition</title>
-    <link rel="icon" href="tom.jpeg">
+    <link rel="icon" href="static/tom.jpeg" />
+    <link rel='stylesheet' href="static/src.css" />
 </head>
 
 <body>
-    <img id="preview" alt='cat' width=500 length=200 hidden="hidden"><br>
-    <input type="file" name="file" id="file" accept="image/jpeg,image/jpg,image/png" multiple="multiple" onchange="previewImage(this)">	
-    <input type="submit" onclick="sendImage()">
-    <p id='waiting'></p><br>
-    <p id='catinfo'></p>
+    <form class="center">
+    <img  id="preview" alt='cat' width=500 length=200 hidden="hidden" /><br/>
+    <input class='image' type="file" name="file" id="file" accept="image/jpeg,image/jpg,image/png" multiple="multiple" onchange="previewImage(this)"/>	
+    <input  type="submit" onclick="sendImage()"  />
+    <p  id='waiting'></p><br>
+    <p  id='catinfo'></p>
+    </form>
 </body>

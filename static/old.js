@@ -1,9 +1,10 @@
+var selected = 0;
 function previewImage(fileDom) {
 	var reader = new FileReader();
 	var file = fileDom.files[0];
 	var imageType = /^image\//;
 	if (!imageType.test(file.type)) {
-		alert("select image");
+		alert("Please select image");
 		return;
 	}
 	reader.onload = function (element) {
@@ -12,9 +13,15 @@ function previewImage(fileDom) {
 		img.removeAttribute("hidden");
 	}
 	reader.readAsDataURL(file);
+	selected = 1;
 }
 function sendImage() {
-	document.getElementById('waiting').innerHTML = 'waiting for host...'
+	if(selected != 1){
+		alert("Please select image");
+		return;
+	}
+	selected = 0;
+	document.getElementById('waiting').innerHTML = 'Waiting for host...'
 	var formData = new FormData();
 	formData.append('photo', $('#file')[0].files[0]);
 	var xhttp = new XMLHttpRequest();
@@ -23,7 +30,7 @@ function sendImage() {
 			getInfo();
 		}
 	}
-	xhttp.open("POST","http://cat.wakk.top", true);
+	xhttp.open("POST","http://cat.wakk.top/run", true);
 	xhttp.send(formData);
 }
 function getInfo() {
@@ -34,9 +41,13 @@ function getInfo() {
 			writePage(this.responseText);
 		}
 	}
-	xhttp.open("GET","http://cat.wakk.top", true);
+	xhttp.open("GET","http://cat.wakk.top/run", true);
 	xhttp.send();
 }
 function writePage(text) {
-	document.getElementById('catinfo').innerHTML = text;
+	var value = eval(text);
+	var name = value.CatType;
+	var link = value.Link;
+	document.getElementById('catname').innerHTML = 'Cat Breeds: ' + name;
+	document.getElementById('catname').setAttribute('href='+link);
 }

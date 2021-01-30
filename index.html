@@ -9,16 +9,40 @@
 </head>
 
 <body>
+    
     <div class="back">
+        <h1>A   Demo For UniqueStudio Hackweek</h1>
         <br/><br/>
         <div class="center">
-        <input class='image' type="file" name="file" id="file" accept="image/jpeg,image/jpg,image/png" multiple="multiple" onchange="previewImage(this)"/>	
-        <button class="button" onclick="sendImage()">Submit</button>
-        <p id='waiting'></p><br>
-        <p id='catinfo'></p>
+            <input class='image' type="file" name="file" id="file" accept="image/jpeg,image/jpg,image/png" multiple="multiple" onchange="previewImage(this)"/>	
+            <button class="button" onclick="sendImage()">Submit</button>
+            <p id='waiting' class="waiting"></p><br>
+            <p class="info">
+                Cat Breeds:
+                <a id='catname'><a/>
+            </p>
         </div>
         <form class="center">
             <img id="preview" alt='cat' width=500 length=200 hidden="hidden" /><br/>
         </form>
-    <div>
+        
+    </div>
+    <div class="center">
+        <p class="bottominfo">
+            Contributor(sorted by name):<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;李佳穆,茅晨杰,王绍宇,杨佳怡,周承禹<br/>
+            Brief Introduction:<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;A site for cat-face recognition.<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;Upload a single image of a cat,we<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp; will return you the breed of it.<br/>
+            Unsolved Problems:<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;1. The webpage is ugly.<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;2. The background program cannot<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;support concurrency and parallelism.<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;3. The AI for recognition is not accurate enough.<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;4. We can only recognize CATS. If you upload an image <br/>    
+            &nbsp;&nbsp;&nbsp;&nbsp;of a mouse, you'll also get a return of CATS BREEDS.
+        </p>
+    </div>
+        
 </body>

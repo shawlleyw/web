@@ -45,9 +45,9 @@ function getInfo() {
 	xhttp.send();
 }
 function writePage(text) {
-	var value = eval(text);
-	var name = value.CatType;
+	var value = text;
+	var name = value.CateType;
 	var link = value.Link;
-	document.getElementById('catname').innerHTML = 'Cat Breeds: ' + name;
-	document.getElementById('catname').setAttribute('href='+link);
+	document.getElementById('catname').innerHTML = name;
+	document.getElementById('catname').setAttribute('href', link);
 }

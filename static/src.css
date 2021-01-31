@@ -1,0 +1,86 @@
+body {  
+    background-color: cadetblue;
+    background-attachment: fixed;
+}
+h1 {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(10, 36, 36); 
+    border:1px solid #fee;
+    outline:none;
+    border-radius:10px;
+    border-style:outset dashed double; 
+    background-color: #aaa; 
+    opacity: 90%;
+}
+input.image{
+    opacity: 90%;
+    display:block;
+    width:250px;
+    height:30px;
+    background-color: #aaa;
+    border:1px solid #fee;
+    outline:none;
+    border-radius:10px;
+    border-style:outset dashed double;
+}
+.button{
+    opacity: 90%;
+    width:100px;
+    height:30x;
+    position: relative;
+    left: 30%;
+}
+.center{
+    opacity: 90%;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+.back{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    height: 900px;
+    background-image: url(background_cat.jpeg);
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+.waiting {
+    opacity: 90%;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: darkgrey;
+    font-family: monospace;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+.info {
+    opacity: 90%;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50;  
+    background-color: darkgrey;
+    color: rgb(22, 14, 14);
+    background-color: darkgrey;
+    font-family: cursive;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+.bottominfo {
+    opacity: 90%;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50;  
+    color: rgb(22, 14, 14);
+    background-color: rgb(253, 252, 252);
+    font-family: cursive;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}

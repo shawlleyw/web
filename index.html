@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type='text/javascript' src='static/jquery-3.5.1.min.js'></script>
+    <script type='text/javascript' src='static/old.js'></script>
+    <title>Cat-Face Recognition</title>
+    <link rel="icon" href="static/tom.jpeg" />
+    <link rel='stylesheet' href="static/src.css" />
+</head>
+
+<body>
+    
+    <div class="back">
+        <h1>A   Demo For UniqueStudio Hackweek</h1>
+        <br/><br/>
+        <div class="center">
+            <input class='image' type="file" name="file" id="file" accept="image/jpeg,image/jpg,image/png" multiple="multiple" onchange="previewImage(this)"/>	
+            <button class="button" onclick="sendImage()">Submit</button>
+            <p id='waiting' class="waiting"></p><br>
+            <p class="info">
+                Cat Breeds: <a id='catname' target='_blank'><a/>
+            </p>
+        </div>
+        <form class="center">
+            <img id="preview" alt='cat' width=500 length=200 hidden="hidden" /><br/>
+        </form>
+        
+    </div>
+    <div class="center">
+        <p class="bottominfo">
+            Contributor(sorted by name):<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;Li Jiamu, Mao Chenjie, Wang Shaoyu, Yang Jiayi, Zhou Chengyu<br/>
+            Brief Introduction:<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;A site for cat-face recognition.<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;Upload a single image of a cat,we<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp; will return you the breed of it.<br/>
+            Unsolved Problems:<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;1. The webpage is ugly.<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;2. The AI for recognition is not accurate enough.<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;3. We can only recognize CATS. If you upload an image <br/>    
+            &nbsp;&nbsp;&nbsp;&nbsp;of a mouse, you'll also get a return of CATS BREEDS.
+        </p>
+    </div>
+        
+</body>
